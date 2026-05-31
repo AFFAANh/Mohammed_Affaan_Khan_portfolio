@@ -268,6 +268,20 @@ use:
 base: "/3d-portfolio/"
 ```
 
+For this portfolio, your repository is:
+
+```text
+Mohammed_Affaan_Khan_portfolio
+```
+
+So `vite.config.ts` should contain:
+
+```ts
+base: "/Mohammed_Affaan_Khan_portfolio/"
+```
+
+If the page is a dark blank screen after deployment, also check for hard-coded public asset paths such as `/models/...`, `/draco/...`, or `/images/...`. On GitHub Pages project sites, those paths must go through Vite's base path. This project has already been updated to use `import.meta.env.BASE_URL` for those assets.
+
 ### Action Fails At `npm ci`
 
 Make sure `package-lock.json` is committed.
