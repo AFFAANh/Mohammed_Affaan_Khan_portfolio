@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Conversational AI Voice Agent Platform</title>
+  <desc id="desc">A technical card showing a real-time voice AI pipeline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#122f38"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+  <circle cx="930" cy="140" r="190" fill="#0f766e" opacity=".16"/>
+  <circle cx="170" cy="670" r="230" fill="#2563eb" opacity=".12"/>
+  <g opacity=".24" stroke="#ffffff" stroke-width="1">
+    <path d="M90 120H1110"/>
+    <path d="M90 240H1110"/>
+    <path d="M90 360H1110"/>
+    <path d="M90 480H1110"/>
+    <path d="M90 600H1110"/>
+  </g>
+  <text x="82" y="104" fill="#9ca3af" font-family="Geist, Arial, sans-serif" font-size="22" letter-spacing="4">REAL-TIME PIPELINE</text>
+  <text x="82" y="168" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="58" font-weight="700">VOICE AGENT</text>
+  <text x="82" y="224" fill="#5eead4" font-family="Geist, Arial, sans-serif" font-size="38" font-weight="600">10K+ concurrent calls</text>
+  <g transform="translate(96 330)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 80C70 5 128 5 194 80S320 155 392 80 520 5 594 80 720 155 790 80" stroke="url(#accent)" stroke-width="16" filter="url(#glow)"/>
+    <path d="M0 160C70 86 128 86 194 160s126 74 198 0 128-74 202 0 126 74 196 0" stroke="#e0f2fe" stroke-width="6" opacity=".75"/>
+  </g>
+  <g transform="translate(112 616)">
+    <rect width="224" height="86" rx="18" fill="#020617" opacity=".75" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="Geist, Arial, sans-serif" font-size="17">LATENCY</text>
+    <text x="24" y="66" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="31" font-weight="700">&lt;500ms</text>
+  </g>
+  <g transform="translate(366 616)">
+    <rect width="224" height="86" rx="18" fill="#020617" opacity=".75" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-family="Geist, Arial, sans-serif" font-size="17">STACK</text>
+    <text x="24" y="66" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="28" font-weight="700">STT LLM TTS</text>
+  </g>
+  <g transform="translate(702 290)">
+    <circle cx="190" cy="190" r="140" fill="#020617" opacity=".78" stroke="#5eead4" stroke-width="3"/>
+    <circle cx="190" cy="190" r="92" fill="none" stroke="#38bdf8" stroke-width="12" opacity=".6"/>
+    <circle cx="190" cy="190" r="28" fill="#5eead4" filter="url(#glow)"/>
+    <path d="M190 50v54M190 276v54M50 190h54M276 190h54M91 91l38 38M251 251l38 38M289 91l-38 38M129 251l-38 38" stroke="#e0f2fe" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  </g>
+</svg>

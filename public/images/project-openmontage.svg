@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">OpenMontage Agentic Video Production System</title>
+  <desc id="desc">A video production card with timeline, agent nodes, and render frames.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171717"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <filter id="glow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+  <text x="76" y="106" fill="#f0abfc" font-family="Geist, Arial, sans-serif" font-size="22" letter-spacing="4">AGENTIC MEDIA</text>
+  <text x="76" y="168" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="54" font-weight="700">OPENMONTAGE</text>
+  <text x="76" y="222" fill="#93c5fd" font-family="Geist, Arial, sans-serif" font-size="34" font-weight="600">instruction-driven video system</text>
+  <g transform="translate(88 312)">
+    <rect width="1024" height="260" rx="30" fill="#020617" opacity=".75" stroke="#4338ca"/>
+    <rect x="44" y="44" width="220" height="132" rx="18" fill="url(#frame)" opacity=".9"/>
+    <polygon points="128,78 128,142 184,110" fill="#020617" opacity=".8"/>
+    <rect x="304" y="44" width="220" height="132" rx="18" fill="#111827" stroke="#60a5fa"/>
+    <circle cx="414" cy="110" r="42" fill="#f472b6" filter="url(#glow)"/>
+    <rect x="564" y="44" width="220" height="132" rx="18" fill="#111827" stroke="#f472b6"/>
+    <path d="M610 144h128M610 110h92M610 76h148" stroke="#e879f9" stroke-width="12" stroke-linecap="round"/>
+    <rect x="824" y="44" width="156" height="132" rx="18" fill="#111827" stroke="#a78bfa"/>
+    <path d="M866 84h72M866 120h72M866 156h44" stroke="#a78bfa" stroke-width="12" stroke-linecap="round"/>
+    <path d="M90 216h844" stroke="#475569" stroke-width="8" stroke-linecap="round"/>
+    <path d="M90 216h482" stroke="#f472b6" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(172 640)" font-family="Geist, Arial, sans-serif" fill="#ffffff">
+    <text x="0" y="0" font-size="28" font-weight="700">11 pipeline types</text>
+    <text x="320" y="0" font-size="28" font-weight="700">YAML manifests</text>
+    <text x="660" y="0" font-size="28" font-weight="700">provider swapping</text>
+  </g>
+</svg>
