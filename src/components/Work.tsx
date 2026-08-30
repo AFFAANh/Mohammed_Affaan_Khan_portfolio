@@ -1,12 +1,15 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 import { projects } from "../data/profile";
 
+const AUTOPLAY_DELAY = 3000;
+
 const Work = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   const goToSlide = useCallback(
     (index: number) => {
@@ -30,6 +33,21 @@ const Work = () => {
     goToSlide(newIndex);
   }, [currentIndex, goToSlide]);
 
+  // Advance every 3s. Keying the timer on currentIndex means any manual
+  // navigation restarts the countdown instead of firing mid-interval.
+  useEffect(() => {
+    if (isPaused) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const timer = window.setTimeout(() => {
+      setCurrentIndex((index) =>
+        index === projects.length - 1 ? 0 : index + 1
+      );
+    }, AUTOPLAY_DELAY);
+
+    return () => window.clearTimeout(timer);
+  }, [currentIndex, isPaused]);
+
   return (
     <div className="work-section" id="work">
       <div className="work-container section-container">
@@ -37,7 +55,11 @@ const Work = () => {
           My <span>Work</span>
         </h2>
 
-        <div className="carousel-wrapper">
+        <div
+          className="carousel-wrapper"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           {/* Navigation Arrows */}
           <button
             className="carousel-arrow carousel-arrow-left"

@@ -41,8 +41,12 @@
 }
 
 .carousel-slide {
-  min-width: 100%;
-  flex-shrink: 0;
+  /* Must be exactly one container width: the track translates by
+     index * 100%, so any slide wider than this accumulates drift. */
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   padding: 50px 0;
 }
@@ -52,10 +56,12 @@
   align-items: center;
   gap: 60px;
   width: 100%;
+  min-width: 0;
 }
 
 .carousel-info {
   flex: 1;
+  min-width: 0;
   display: flex;
   gap: 30px;
   align-items: flex-start;
@@ -73,6 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-width: 0;
 }
 
 .carousel-details h4 {
@@ -109,6 +116,7 @@
 
 .carousel-image-wrapper {
   flex: 1;
+  min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
