@@ -40,6 +40,10 @@ a.contact-social {
   border-bottom: 1px solid #ccc;
 }
 
+a.contact-social + h4 {
+  margin-top: 24px;
+}
+
 .contact-box h2 {
   font-weight: 400;
   font-size: 23px;

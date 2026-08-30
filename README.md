@@ -2,7 +2,7 @@
 
 Personal 3D portfolio for Mohammed Affaan Khan, built with React, TypeScript, Vite, Three.js, React Three Fiber, and GSAP.
 
-The site presents GenAI, agentic AI, voice intelligence, RAG systems, clinical workflow AI, SaaS, and full-stack AI projects. NDA-sensitive work has been intentionally excluded from the public portfolio content.
+The site presents agentic AI, GenAI, conversational voice AI, RAG systems, clinical workflow AI, SaaS, and full-stack AI projects, along with verifiable certificates. NDA-sensitive work has been intentionally excluded from the public portfolio content.
 
 ## Tech Stack
 
@@ -21,6 +21,7 @@ The site presents GenAI, agentic AI, voice intelligence, RAG systems, clinical w
 ```text
 .
 ├── public/
+│   ├── certificates/          # Certificate PDFs linked from the site
 │   ├── images/                # Portfolio and project visuals
 │   └── models/                # 3D model assets
 ├── src/
@@ -68,5 +69,6 @@ Most personal content is centralized in `src/data/profile.ts`, including:
 - Skills and service cards
 - Career timeline
 - Project carousel content
+- Certifications (title, issuer, summary, and certificate PDF path)
 
-Static project visuals live in `public/images/`.
+Static project visuals live in `public/images/`. Certificate PDFs and the resume live in `public/` and `public/certificates/`.

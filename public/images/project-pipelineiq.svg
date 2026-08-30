@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">PipelineIQ Autonomous GTM Agent Platform</title>
+  <desc id="desc">A technical card showing a supervised multi-agent go-to-market pipeline.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#122f38"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+  <circle cx="960" cy="150" r="200" fill="#0f766e" opacity=".16"/>
+  <circle cx="150" cy="690" r="220" fill="#2563eb" opacity=".12"/>
+  <g opacity=".2" stroke="#ffffff" stroke-width="1">
+    <path d="M90 120H1110"/>
+    <path d="M90 260H1110"/>
+    <path d="M90 400H1110"/>
+    <path d="M90 540H1110"/>
+    <path d="M90 680H1110"/>
+  </g>
+  <text x="82" y="104" fill="#9ca3af" font-family="Geist, Arial, sans-serif" font-size="22" letter-spacing="4">AGENTIC GTM SYSTEM</text>
+  <text x="82" y="168" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="58" font-weight="700">PIPELINEIQ</text>
+  <text x="82" y="224" fill="#5eead4" font-family="Geist, Arial, sans-serif" font-size="36" font-weight="600">LangGraph supervisor + MCP tools</text>
+
+  <g transform="translate(96 300)">
+    <rect width="300" height="88" rx="20" fill="#020617" opacity=".8" stroke="#5eead4" stroke-width="3"/>
+    <text x="28" y="54" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="27" font-weight="700">SUPERVISOR</text>
+    <path d="M150 88v46" stroke="url(#accent)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M116 134H832M116 134v42M344 134v42M578 134v42M832 134v42" stroke="url(#accent)" stroke-width="5" fill="none" opacity=".8"/>
+  </g>
+
+  <g font-family="Geist, Arial, sans-serif">
+    <g transform="translate(112 476)">
+      <rect width="200" height="96" rx="18" fill="#020617" opacity=".78" stroke="#164e63"/>
+      <text x="22" y="38" fill="#94a3b8" font-size="16" letter-spacing="2">AGENT 01</text>
+      <text x="22" y="72" fill="#ffffff" font-size="25" font-weight="700">RESEARCH</text>
+    </g>
+    <g transform="translate(340 476)">
+      <rect width="200" height="96" rx="18" fill="#020617" opacity=".78" stroke="#164e63"/>
+      <text x="22" y="38" fill="#94a3b8" font-size="16" letter-spacing="2">AGENT 02</text>
+      <text x="22" y="72" fill="#ffffff" font-size="25" font-weight="700">CONTENT</text>
+    </g>
+    <g transform="translate(568 476)">
+      <rect width="212" height="96" rx="18" fill="#020617" opacity=".78" stroke="#164e63"/>
+      <text x="22" y="38" fill="#94a3b8" font-size="16" letter-spacing="2">AGENT 03</text>
+      <text x="22" y="72" fill="#ffffff" font-size="25" font-weight="700">PROSPECT</text>
+    </g>
+    <g transform="translate(808 476)">
+      <rect width="240" height="96" rx="18" fill="#020617" opacity=".78" stroke="#5eead4"/>
+      <text x="22" y="38" fill="#94a3b8" font-size="16" letter-spacing="2">AGENT 04</text>
+      <text x="22" y="72" fill="#5eead4" font-size="25" font-weight="700">QUALIFY</text>
+    </g>
+  </g>
+
+  <g transform="translate(112 630)" font-family="Geist, Arial, sans-serif">
+    <rect width="330" height="86" rx="18" fill="#020617" opacity=".75" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="17">GOVERNANCE</text>
+    <text x="24" y="66" fill="#ffffff" font-size="24" font-weight="700">TOKEN &amp; COST BUDGETS</text>
+  </g>
+  <g transform="translate(472 630)" font-family="Geist, Arial, sans-serif">
+    <rect width="330" height="86" rx="18" fill="#020617" opacity=".75" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="17">CONTROL</text>
+    <text x="24" y="66" fill="#ffffff" font-size="24" font-weight="700">HUMAN-IN-THE-LOOP</text>
+  </g>
+
+  <g transform="translate(880 168)">
+    <circle cx="110" cy="110" r="96" fill="#020617" opacity=".78" stroke="#5eead4" stroke-width="3"/>
+    <circle cx="110" cy="110" r="24" fill="#5eead4" filter="url(#glow)"/>
+    <g stroke="#38bdf8" stroke-width="6" opacity=".85">
+      <path d="M110 110 34 66M110 110l76-44M110 110v88M110 110l72 40"/>
+    </g>
+    <g fill="#e0f2fe">
+      <circle cx="34" cy="66" r="13"/>
+      <circle cx="186" cy="66" r="13"/>
+      <circle cx="110" cy="198" r="13"/>
+      <circle cx="182" cy="150" r="13"/>
+    </g>
+    <text x="110" y="238" fill="#94a3b8" font-family="Geist, Arial, sans-serif" font-size="18" text-anchor="middle" letter-spacing="3">MCP SERVERS</text>
+  </g>
+</svg>

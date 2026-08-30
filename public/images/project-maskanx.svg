@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">MaskanX Multi-Tenant AI Marketing and CRM SaaS</title>
+  <desc id="desc">A technical card showing a multi-tenant CRM control plane with an agentic outreach layer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#122f38"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+  <circle cx="1000" cy="180" r="200" fill="#0f766e" opacity=".16"/>
+  <circle cx="160" cy="660" r="220" fill="#2563eb" opacity=".12"/>
+  <g opacity=".2" stroke="#ffffff" stroke-width="1">
+    <path d="M90 120H1110"/>
+    <path d="M90 280H1110"/>
+    <path d="M90 440H1110"/>
+    <path d="M90 600H1110"/>
+  </g>
+  <text x="82" y="104" fill="#9ca3af" font-family="Geist, Arial, sans-serif" font-size="22" letter-spacing="4">MULTI-TENANT CONTROL PLANE</text>
+  <text x="82" y="168" fill="#ffffff" font-family="Geist, Arial, sans-serif" font-size="58" font-weight="700">MASKANX</text>
+  <text x="82" y="224" fill="#5eead4" font-family="Geist, Arial, sans-serif" font-size="36" font-weight="600">agentic email &amp; voice outreach</text>
+
+  <g transform="translate(96 296)" font-family="Geist, Arial, sans-serif">
+    <rect width="230" height="90" rx="18" fill="#020617" opacity=".78" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="16" letter-spacing="2">INGEST</text>
+    <text x="24" y="68" fill="#ffffff" font-size="24" font-weight="700">AD PLATFORMS</text>
+  </g>
+  <g transform="translate(96 402)" font-family="Geist, Arial, sans-serif">
+    <rect width="230" height="90" rx="18" fill="#020617" opacity=".78" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="16" letter-spacing="2">INGEST</text>
+    <text x="24" y="68" fill="#ffffff" font-size="24" font-weight="700">SCRAPERS</text>
+  </g>
+  <path d="M326 341h70v106h-70M396 394h60" stroke="url(#accent)" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <g transform="translate(456 296)" font-family="Geist, Arial, sans-serif">
+    <rect width="288" height="196" rx="24" fill="#020617" opacity=".85" stroke="#5eead4" stroke-width="3"/>
+    <text x="144" y="70" fill="#ffffff" font-size="30" font-weight="700" text-anchor="middle">AGENTIC LAYER</text>
+    <text x="144" y="112" fill="#94a3b8" font-size="20" text-anchor="middle">lead qualification</text>
+    <text x="144" y="146" fill="#94a3b8" font-size="20" text-anchor="middle">campaign + content</text>
+    <text x="144" y="180" fill="#5eead4" font-size="20" text-anchor="middle">Redis + BullMQ + Temporal</text>
+  </g>
+
+  <path d="M744 394h40v-53h34M784 394v53h34" stroke="url(#accent)" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <g transform="translate(818 296)" font-family="Geist, Arial, sans-serif">
+    <rect width="270" height="90" rx="18" fill="#020617" opacity=".78" stroke="#5eead4"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="16" letter-spacing="2">OUTREACH</text>
+    <text x="24" y="68" fill="#5eead4" font-size="24" font-weight="700">VOICE AGENTS</text>
+  </g>
+  <g transform="translate(818 402)" font-family="Geist, Arial, sans-serif">
+    <rect width="270" height="90" rx="18" fill="#020617" opacity=".78" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="16" letter-spacing="2">OUTREACH</text>
+    <text x="24" y="68" fill="#ffffff" font-size="24" font-weight="700">EMAIL AGENTS</text>
+  </g>
+
+  <g transform="translate(112 578)" font-family="Geist, Arial, sans-serif">
+    <rect width="976" height="60" rx="16" fill="#020617" opacity=".6" stroke="#164e63"/>
+    <text x="24" y="39" fill="#94a3b8" font-size="19">CRM stage transitions written back in real time</text>
+    <circle cx="920" cy="30" r="12" fill="#5eead4" filter="url(#glow)"/>
+  </g>
+
+  <g transform="translate(112 662)" font-family="Geist, Arial, sans-serif">
+    <rect width="300" height="86" rx="18" fill="#020617" opacity=".75" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="17">STACK</text>
+    <text x="24" y="66" fill="#ffffff" font-size="24" font-weight="700">MERN + Claude API</text>
+  </g>
+  <g transform="translate(442 662)" font-family="Geist, Arial, sans-serif">
+    <rect width="300" height="86" rx="18" fill="#020617" opacity=".75" stroke="#164e63"/>
+    <text x="24" y="36" fill="#94a3b8" font-size="17">TENANCY</text>
+    <text x="24" y="66" fill="#ffffff" font-size="24" font-weight="700">MULTI-TENANT</text>
+  </g>
+</svg>

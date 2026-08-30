@@ -1,5 +1,5 @@
 import { MdArrowOutward, MdCopyright } from "react-icons/md";
-import { profile, socialLinks } from "../data/profile";
+import { certifications, profile, socialLinks } from "../data/profile";
 import "./styles/Contact.css";
 
 const Contact = () => {
@@ -26,6 +26,8 @@ const Contact = () => {
             {profile.education.map((item) => (
               <p key={item}>{item}</p>
             ))}
+            <h4>Languages</h4>
+            <p>{profile.languages}</p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
@@ -39,6 +41,19 @@ const Contact = () => {
                 key={link.label}
               >
                 {link.label} <MdArrowOutward />
+              </a>
+            ))}
+            <h4>Certificates</h4>
+            {certifications.map((cert) => (
+              <a
+                href={cert.href}
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="disable"
+                className="contact-social"
+                key={cert.title}
+              >
+                {cert.issuer} <MdArrowOutward />
               </a>
             ))}
           </div>
